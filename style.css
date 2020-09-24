@@ -3,7 +3,7 @@ body {
     font-weight: 300;
 }
 
-h1, h3 { 
+h1, h3, h2 { 
     margin: 0;
 }
 
@@ -13,15 +13,31 @@ h1, h3 {
     margin-right: 0.25em;
 }
 
+.tagline {
+    font-family: 'Special Elite', sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: 0.2rem;
+    color: #999;
+}
+
 .container {    
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.container, footer {
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+}
+
+/* footer */
+
+footer {
+    background-color: #ccc;
+    padding: 1em;
+}
 /* navigation */
 
 .nav-links {
@@ -65,12 +81,12 @@ nav, .title {
 .carousel button {
     border-radius: 50px;
     border: unset;
-    background-color: white;
-    font-size: 15px;
+    background-color: rgba(255, 255 , 255, 0.7);
+    font-size: 1.5rem;
     cursor: pointer;
     width: 40px;
     height: 40px;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 #button-previous{
