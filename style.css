@@ -3,6 +3,10 @@ body {
     font-weight: 300;
 }
 
+h1, h3 { 
+    margin: 0;
+}
+
 .title {
     font-family: 'Special Elite', sans-serif;
     font-size: 3rem;
@@ -35,4 +39,53 @@ body {
 
 nav, .title {
     text-align: center;
+}
+
+/* carousel */
+
+.carousel {
+    max-width: 600px;
+    position: relative;
+}
+
+.carousel-item {
+    display: none;
+    max-width: 600px;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+    animation: fadeVisibility 0.5s;
+}
+
+.carousel button {
+    border-radius: 50px;
+    border: unset;
+    background-color: white;
+    font-size: 15px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    font-weight: bold;
+}
+
+#button-previous{
+    margin-left: 20px;
+}
+
+#button-next {
+    margin-right: 20px;
+}
+
+.carousel-actions {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* vertical aligning. works with the top 50% */
 }
