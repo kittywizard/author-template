@@ -20,16 +20,16 @@ h1, h3, h2 {
     color: #999;
 }
 
-.container {    
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+/* layout */
 
-.container, footer {
+
+.container, footer, .nav-links {
     width: 90%;
     display: flex;
     margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* footer */
@@ -38,11 +38,12 @@ footer {
     background-color: #ccc;
     padding: 1em;
 }
+
 /* navigation */
 
 .nav-links {
     list-style: none;
-    display: flex;
+    padding: 0.5em;
 }
 
 .nav-link {
@@ -57,51 +58,11 @@ nav, .title {
     text-align: center;
 }
 
-/* carousel */
 
-.carousel {
-    max-width: 600px;
-    position: relative;
-}
+@media (min-width: 650px) {
+    .container, .nav-links {
+        flex-direction: row;
+        align-items: center;
 
-.carousel-item {
-    display: none;
-    max-width: 600px;
-}
-
-.hidden {
-    display: none;
-}
-
-.visible {
-    display: block;
-    animation: fadeVisibility 0.5s;
-}
-
-.carousel button {
-    border-radius: 50px;
-    border: unset;
-    background-color: rgba(255, 255 , 255, 0.7);
-    font-size: 1.5rem;
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-    font-weight: 700;
-}
-
-#button-previous{
-    margin-left: 20px;
-}
-
-#button-next {
-    margin-right: 20px;
-}
-
-.carousel-actions {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%); /* vertical aligning. works with the top 50% */
+    }
 }
