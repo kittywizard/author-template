@@ -6,6 +6,7 @@ body {
 .title {
     font-family: 'Special Elite', sans-serif;
     font-size: 3rem;
+    margin-right: 0.25em;
 }
 
 .container {    
