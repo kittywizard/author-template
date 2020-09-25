@@ -32,6 +32,11 @@ h1, h3, h2 {
     align-items: center;
 }
 
+.container-content {
+    display: flex;
+    flex-direction: column;
+}
+
 /* footer */
 
 footer {
